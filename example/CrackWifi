@@ -1,5 +1,5 @@
-#convert mon model:
-  airmon-ng start wlan
+#convert mon mode:
+  airmon-ng start wlan0
 
 #select target
   airodump-ng wlan0mon
@@ -12,3 +12,6 @@
     
 #crack password from filename.cap (wlan0mon.cap)
 aircrack-ng -w /root/mima.lst /root/wlan0mon.cap-01.cap
+
+#stop mon mode:
+  airmon-ng stop wlan0mon
