@@ -1,0 +1,9 @@
+
+# shutdown wlan0 device
+ ifconfig wlan0 down
+
+# auto reset wlan0 mac address
+ macchanger -r wlan0
+
+# restart wlan0 device
+ service network-manager restart
