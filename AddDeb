@@ -1,0 +1,11 @@
+
+1.update kali secure key
+  wget https://http.kali.org/kali/pool/main/k/kali-archive-keyring/kali-archive-keyring_2018.1_all.deb
+  apt install ./kali-archive-keyring_2018.1_all.deb
+
+2.vim /etc/apt/sources.list
+    add text :
+    
+#阿里云
+deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
