@@ -14,7 +14,7 @@ computer 2:
   3.run win_backdoor.exe
     cmd> win_backdoor.exe
     
-computer 3:
+computer 1:
   4.exploit back door
     exploit
   5 open session
