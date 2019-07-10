@@ -1,0 +1,30 @@
+永久关闭SElinux:
+
+    vim /etc/selinux/config
+
+    SELINUX=disabled
+    
+    
+创建共享用户：
+    useradd -m share
+    
+共享用户密码：
+    smbpassword -a share
+    
+创建共享目录：
+    mkdir /home/share/smb
+    chmod 777 -R /home/share
+    
+配置文件smb.conf 追加
+  
+    [share]
+        path = /home/share/smb
+        valid users = share
+        writable = yes
+        create mode = 0664
+        directory mode=0775
+        write list = share
+        
+  systemctl restart smb
+  
+  complete !!!!!
