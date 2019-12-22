@@ -1,3 +1,9 @@
+# install aircrack tool
+  sudo apt-get install aircrack-ng -y 
+  
+# install crunch charset 
+   sudo apt-get install crunch -y  
+
 #convert mon mode:
   airmon-ng start wlan0
 
