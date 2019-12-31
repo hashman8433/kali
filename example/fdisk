@@ -3,6 +3,9 @@ apt install -y ntfs-config
 
 # mount ntfs disk  (centos)
 
+# search ntfs disk volumn
+fdisk -l
+
 # create director
 mkdir /mnt/sdb5
 
