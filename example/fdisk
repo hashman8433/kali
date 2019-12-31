@@ -1,1 +1,9 @@
 ntfs-config
+
+# mount ntfs disk 
+
+# create director
+mkdir /mnt/sdb5
+
+# mount ntfs disk
+mount -t ntfs-3g /dev/sdb5 /mnt/sdb5
