@@ -1,6 +1,7 @@
+# ubuntu ntfs config write permission
 ntfs-config
 
-# mount ntfs disk 
+# mount ntfs disk  (centos)
 
 # create director
 mkdir /mnt/sdb5
