@@ -1,5 +1,5 @@
 # ubuntu ntfs config write permission
-ntfs-config
+apt install -y ntfs-config
 
 # mount ntfs disk  (centos)
 
