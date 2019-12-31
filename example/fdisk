@@ -1,7 +1,11 @@
-# ubuntu ntfs config write permission
+# +++++++++++ ubuntu ++++++++++++++++
+
+# ntfs config write permission
 apt install -y ntfs-config
 
-# mount ntfs disk  (centos)
+# +++++++++++ centos ++++++++++++++++
+
+# mount ntfs disk  
 
 # search ntfs disk volumn
 fdisk -l
