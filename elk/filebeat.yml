@@ -1,0 +1,13 @@
+filebeat.inputs:
+- type: log
+  paths:
+    #监控文件夹
+    - /var/log/*.log
+
+output:
+  elasticsearch:
+    hosts: ["172.20.10.9:9200"]
+
+# index 索引名称
+setup.ilm.rollover_alias: "hotel"
+setup.ilm.pattern: "{now/d}-12"
